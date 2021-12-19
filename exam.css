@@ -1,0 +1,147 @@
+.container {
+    background-color: gainsboro;
+    border-radius: 25px;
+    align-items: center;
+    margin: auto;
+    width: 750px;
+
+}
+
+.container .Scores {
+    display: flex;
+    margin-top: 5%;
+
+}
+
+.container .Scores p {
+    margin-top: 15px;
+    margin-left: 50px;
+    margin-right: 320px;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+@media only screen and (max-width: 1500px) {
+    .container {
+        width: 650px;
+
+    }
+
+    .container .Scores p {
+        margin-top: 15px;
+        margin-left: 40px;
+        margin-right: 150px;
+        font-size: 20px;
+        font-family: Impact,
+            Haettenschweiler,
+            'Arial Narrow Bold',
+            sans-serif;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 400px;
+    }
+
+    .container .Scores p {
+        margin-left: 10px;
+
+    }
+}
+
+
+
+.container .Question {
+    border: 2px solid black;
+    border-radius: 8px;
+    height: 250px;
+}
+
+.container .Question p {
+    display: relative;
+    left: auto;
+    margin: auto;
+    text-align: center;
+    width: auto;
+    margin-top: 100px;
+}
+
+
+.container .Answer {
+    display: block;
+    margin-top: 10px;
+}
+
+.container .Answer .FirstPart p,
+.container .Answer .SecondPart p {
+    border: 2px solid black;
+    margin-left: 30px;
+    margin-right: 140px;
+    border-radius: 15px;
+    width: 300px;
+    padding-left: 40px;
+    position: relative;
+}
+
+.container .Answer .FirstPart,
+.container .Answer .SecondPart {
+    display: flex;
+}
+
+.container .Next p {
+    border: 2px solid black;
+    border-radius: 15px;
+    padding-left: 7px;
+    position: relative;
+    left: auto;
+    margin: auto;
+    text-align: center;
+    width: auto;
+}
+
+.container .Next {
+    padding-bottom: 10px;
+}
+
+.box {
+    margin-left: -130px;
+    margin-top: 7px;
+    display: inline-block;
+
+}
+
+.pop-container {
+    background-color: rgba(0, 0, 0, .7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .pop-container {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+.exit {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 25px;
+}
+
+.pop-container label {
+    margin: auto;
+    position: relative;
+    top: 45%;
+    left: 50%;
+    color: #fff;
+    font-size: large;
+}
